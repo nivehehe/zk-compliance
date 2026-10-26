@@ -1,6 +1,20 @@
+# Dependencies
 node_modules/
+frontend/node_modules/
+
+# Production builds
+dist/
+frontend/dist/
+
+# OS and logs
+.DS_Store
+*.log
+
+# Circuit ceremony intermediate files
 *.ptau
-*.zkey
-*_js/
-*.r1cs
 *.sym
+
+# Whitelist essential proving keys and wasm for out-of-the-box browser execution
+!*.zkey
+!build/compliance.zkey
+!frontend/public/compliance.zkey

@@ -1,15 +1,27 @@
 {
   "name": "zk-compliance",
   "version": "1.0.0",
-  "description": "",
+  "description": "Zero-Knowledge Compliance Protocol & Proof-of-Attribute Identity Layer",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "type": "commonjs",
+  "scripts": {
+    "test": "node --test test/compliance.test.mjs",
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "compile:circuit": "bash scripts/compile-circuit.sh"
+  },
+  "keywords": [
+    "zero-knowledge",
+    "zk-snarks",
+    "groth16",
+    "circom",
+    "compliance",
+    "kyc",
+    "defi",
+    "solidity"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
     "circomlib": "^2.0.5",
     "snarkjs": "^0.7.6"
